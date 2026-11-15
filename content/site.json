@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "kicker": "Industrial Manufacturer — Esfahan, Iran — Est. 1948",
+    "title": "Sanat Mansoor",
+    "subtitle": "A family-built industrial partner. Seven product segments, more than 1,000 delivered projects, and one habit: quality."
+  },
+  "stats": [
+    { "value": "1,000+", "label": "Delivered projects" },
+    { "value": "200+", "label": "Specialists" },
+    { "value": "7", "label": "Product segments" },
+    { "value": "1948", "label": "Founded, Esfahan" }
+  ],
+  "brands": [
+    {
+      "name": "SAMIE",
+      "description": "Heavy industrial equipment. Machine design & fabrication, bearings, chocks and bushes, liner handlers, cone crushers and line equipment for steel, cement and power plants.",
+      "image": "assets/img/brand-samie.jpg",
+      "link": "mailto:info@smansoor.com?subject=SAMIE%20catalog%20request"
+    },
+    {
+      "name": "POWERMAN",
+      "description": "High-pressure hydraulics. Cylinders, pumps and tools to 1,500 bar — pullers, crimpers, bolting systems, nut splitters and explosion-proof pumps for safety-critical work.",
+      "image": "assets/img/brand-powerman.jpg",
+      "link": "https://www.powermantools.com/"
+    },
+    {
+      "name": "SAMEE",
+      "description": "Industrial electrical equipment. Sockets, plugs, connectors and appliances from 10A to 125A, cable festoon systems, C-rails and durable alarm sirens for harsh plants.",
+      "image": "assets/img/brand-samee.jpg",
+      "link": "mailto:info@smansoor.com?subject=SAMEE%20catalog%20request"
+    }
+  ],
+  "contact": {
+    "email": "info@smansoor.com",
+    "phones": ["+98 (31) 3760 9171", "+98 (31) 3760 9168"],
+    "address": "#78, 9th Street, Oshtorjan Industrial Park, Esfahan, Iran",
+    "instagram": "https://instagram.com/sanatmansoor",
+    "linkedin": "https://www.linkedin.com/company/sanat-mansoor"
+  }
+}
