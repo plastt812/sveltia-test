@@ -1,0 +1,245 @@
+/* ————— Sanat Mansoor · Persian (RTL) ————— */
+
+@font-face{
+  font-family:"Estedad";
+  src:url("assets/fonts/fa/Estedad-VF.woff2") format("woff2");
+  font-weight:100 900;
+  font-display:swap;
+}
+
+:root{
+  --display:"Estedad","Vazirmatn","Segoe UI",Tahoma,sans-serif;
+  --body:"Estedad","Vazirmatn","Segoe UI",Tahoma,sans-serif;
+  --serif-italic:"Estedad","Vazirmatn","Segoe UI",Tahoma,sans-serif;
+}
+
+html[dir="rtl"] body{
+  font-family:var(--body);
+  font-size:17px;
+  font-weight:400;
+  line-height:1.9;
+  letter-spacing:normal;
+}
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3{
+  font-weight:700;
+  letter-spacing:normal;
+  line-height:1.35;
+}
+
+/* Persian never takes tracking or faux caps */
+html[dir="rtl"] .skip-link,
+html[dir="rtl"] .nav__links a,
+html[dir="rtl"] .nav__cta,
+html[dir="rtl"] .nav__panel a,
+html[dir="rtl"] .hero__kicker,
+html[dir="rtl"] .eyebrow,
+html[dir="rtl"] .eyebrow--pill,
+html[dir="rtl"] .quote cite,
+html[dir="rtl"] .heritage__eyebrow,
+html[dir="rtl"] .heritage__caption,
+html[dir="rtl"] .heritage__link,
+html[dir="rtl"] .card__label p,
+html[dir="rtl"] .card__circle-label p,
+html[dir="rtl"] .card__plaque p,
+html[dir="rtl"] .card__pill-overlay span,
+html[dir="rtl"] .works__stats span,
+html[dir="rtl"] .service__link,
+html[dir="rtl"] .btn-solid,
+html[dir="rtl"] .btn-ghost,
+html[dir="rtl"] .footer h3,
+html[dir="rtl"] .footer__social a,
+html[dir="rtl"] .footer__bar{
+  text-transform:none;
+  letter-spacing:normal;
+}
+
+/* ---------- NAV ---------- */
+html[dir="rtl"] .skip-link{
+  left:auto;right:12px;
+  font-size:14px;font-weight:600;
+}
+html[dir="rtl"] .nav__mark{
+  font-size:19px;letter-spacing:normal;word-spacing:normal;
+}
+html[dir="rtl"] .nav__links a{font-size:15px}
+html[dir="rtl"] .nav__cta{font-size:15px;font-weight:600;padding:10px 24px}
+html[dir="rtl"] .nav.is-scrolled .nav__cta{
+  background:var(--ink);border-color:var(--ink);color:var(--bg);
+}
+html[dir="rtl"] .nav.is-scrolled .nav__cta:hover{
+  background:transparent;color:var(--ink);
+}
+html[dir="rtl"] .nav.is-scrolled{box-shadow:0 10px 30px rgba(17,17,17,.06)}
+html[dir="rtl"] .nav__panel a{font-size:15px}
+html[dir="rtl"] .nav__panel-cta{font-weight:600 !important}
+
+/* ---------- HERO ---------- */
+html[dir="rtl"] .hero__kicker{
+  font-size:13.5px;font-weight:500;
+}
+html[dir="rtl"] .hero__title{
+  font-size:min(12.6vw,200px);
+  line-height:1.18;
+  letter-spacing:normal;
+  word-spacing:normal;
+  white-space:nowrap;
+}
+html[dir="rtl"] .hero__sub{
+  max-width:680px;
+  font-size:17px;font-weight:400;line-height:2;
+  text-wrap:balance;
+}
+@media (max-width:640px){
+  html[dir="rtl"] .hero__title{
+    white-space:normal;
+    font-size:clamp(2.9rem,14.5vw,5rem);
+    line-height:1.3;
+  }
+}
+
+/* ---------- PHILOSOPHY ---------- */
+html[dir="rtl"] .philosophy__orbit{
+  left:auto;right:0;
+  transform:translate(50%,-50%);
+}
+html[dir="rtl"] .philosophy__blob{
+  right:auto;left:0;
+  transform:translate(-33%,33%);
+}
+html[dir="rtl"] .quote-mark{transform:scaleX(-1)}
+html[dir="rtl"] .quote p{
+  font-size:clamp(2rem,5vw,4.1rem);
+  line-height:1.45;
+  letter-spacing:normal;
+  font-weight:600;
+}
+html[dir="rtl"] .quote em{
+  font-style:normal;font-weight:300;letter-spacing:normal;
+}
+html[dir="rtl"] .quote cite{
+  font-size:14px;line-height:1.9;
+}
+html[dir="rtl"] .philosophy__grid{text-align:start}
+html[dir="rtl"] .philosophy__col h3{
+  font-size:21px;font-weight:600;line-height:1.6;margin-bottom:12px;
+}
+html[dir="rtl"] .philosophy__col p{
+  font-size:15.5px;font-weight:400;line-height:2;
+}
+
+/* ---------- HERITAGE ---------- */
+html[dir="rtl"] .heritage{text-align:start}
+html[dir="rtl"] .heritage__eyebrow{
+  font-size:12px;font-weight:600;line-height:1.9;
+}
+html[dir="rtl"] .heritage__head h2{
+  font-size:clamp(2rem,5.4vw,5.2rem);
+  line-height:1.38;
+  letter-spacing:normal;
+}
+html[dir="rtl"] .heritage__head h2 em{
+  font-style:normal;font-weight:300;letter-spacing:normal;
+}
+html[dir="rtl"] .heritage__caption{
+  font-size:11px;line-height:1.8;
+}
+html[dir="rtl"] .heritage__text{line-height:2.05}
+html[dir="rtl"] .heritage__link{font-size:13px;font-weight:600}
+html[dir="rtl"] .heritage__link svg{transform:scaleX(-1)}
+html[dir="rtl"] .heritage__link:hover svg{transform:translateX(-5px) scaleX(-1)}
+
+/* ---------- WORKS ---------- */
+html[dir="rtl"] .eyebrow{font-size:13px;font-weight:600}
+html[dir="rtl"] .eyebrow--pill{font-size:12px;padding:7px 18px}
+html[dir="rtl"] .link-underline{font-size:15px}
+html[dir="rtl"] .works__head h2{line-height:1.38;letter-spacing:normal}
+html[dir="rtl"] .card__label{
+  left:auto;right:32px;
+  text-align:start;
+}
+html[dir="rtl"] .card__label h3{
+  font-size:clamp(1.15rem,1.8vw,1.7rem);
+  line-height:1.5;letter-spacing:normal;
+}
+html[dir="rtl"] .card__label p{
+  font-size:12.5px;line-height:1.8;margin-top:10px;
+}
+html[dir="rtl"] .card__circle-label h3{
+  font-size:clamp(1.3rem,2.2vw,1.9rem);
+  line-height:1.5;letter-spacing:normal;
+}
+html[dir="rtl"] .card__circle-label p{
+  font-size:13px;line-height:1.8;margin-top:10px;
+}
+html[dir="rtl"] .card__plaque{
+  left:auto;right:0;
+  padding:22px 24px 22px 48px;
+  border-top-right-radius:0;
+  border-top-left-radius:24px;
+}
+html[dir="rtl"] .card__plaque h3{
+  font-size:clamp(1.1rem,1.8vw,1.45rem);
+  line-height:1.5;letter-spacing:normal;
+}
+html[dir="rtl"] .card__plaque p{font-size:12px;line-height:1.8;margin-top:10px}
+html[dir="rtl"] .card__pill-overlay span{
+  font-size:19px;font-weight:600;line-height:1.55;
+}
+html[dir="rtl"] .works__stats strong{
+  font-size:clamp(1.5rem,2.8vw,2.2rem);
+  line-height:1.45;letter-spacing:normal;
+}
+html[dir="rtl"] .works__stats span{
+  display:block;margin-top:6px;
+  font-size:13px;line-height:1.8;
+}
+
+/* ---------- BRANDS ---------- */
+html[dir="rtl"] .brands__title{line-height:1.4;letter-spacing:normal}
+html[dir="rtl"] .service h3{
+  font-size:26px;line-height:1.45;letter-spacing:normal;
+}
+html[dir="rtl"] .service p{
+  font-size:15.5px;font-weight:400;line-height:2;
+}
+html[dir="rtl"] .service__link{font-size:14px;font-weight:600}
+html[dir="rtl"] .service__link svg{transform:scaleX(-1)}
+html[dir="rtl"] .service__link:hover svg{transform:translateX(-6px) scaleX(-1)}
+html[dir="rtl"] .service__icon{left:auto;right:20px}
+
+/* ---------- CONTACT ---------- */
+html[dir="rtl"] .contact h2{line-height:1.45;letter-spacing:normal}
+html[dir="rtl"] .contact em{font-style:normal;font-weight:300}
+html[dir="rtl"] .contact__sub{font-size:17px;line-height:2;max-width:560px}
+html[dir="rtl"] .btn-solid,
+html[dir="rtl"] .btn-ghost{font-size:15px;font-weight:600}
+html[dir="rtl"] .btn-ghost bdi{font-size:14px;font-weight:500}
+
+/* ---------- FOOTER ---------- */
+html[dir="rtl"] .footer__mark{
+  font-size:20px;line-height:1.45;letter-spacing:normal;
+}
+html[dir="rtl"] .footer__brand p:last-of-type{max-width:370px}
+html[dir="rtl"] .footer h3{
+  font-size:13px;font-weight:600;margin-bottom:18px;
+}
+html[dir="rtl"] .footer ul{font-size:14.5px;line-height:1.95}
+html[dir="rtl"] .footer__social a{font-size:12.5px;font-weight:600}
+html[dir="rtl"] .footer__contact svg{margin-top:7px}
+html[dir="rtl"] .footer__bar{font-size:12.5px;line-height:1.9}
+
+/* Reveal wipes in from the reading edge */
+html[dir="rtl"] .js .reveal:not(.is-in){clip-path:inset(0 0 0 100%)}
+
+/* ---------- NARROW OVERRIDES ---------- */
+@media (max-width:980px){
+  html[dir="rtl"] .card__label{right:20px;left:auto}
+  html[dir="rtl"] .card__label p{font-size:11.5px;letter-spacing:normal}
+  html[dir="rtl"] .card__plaque{padding:16px 20px 16px 40px}
+}
+@media (max-width:760px){
+  html[dir="rtl"] .heritage__caption{font-size:9.5px}
+  html[dir="rtl"] .heritage__head h2{line-height:1.45}
+}
